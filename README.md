@@ -102,3 +102,6 @@ ITIL tools often tie in with:
 7. Document and Review
 
 Write detailed documentation for each module you design, mapping it back to the ITIL framework where applicable. Review and iterate based on feedback or real-use testing.
+
+## Phase 01: Incident Management
+
