@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Play } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/custom/navbar";
 
 const play = Play({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${play.variable} font-play`}>
+        <Navbar />
         {children}
       </body>
     </html>

@@ -1,10 +1,13 @@
 import IncidentManagement from "@/components/custom/incident-management";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="m-10">
-      <div className="text-center text-6xl">
-        <h1>Hello, Good morning Evan!</h1>
+    <div className="mx-10 my-5">
+
+
+      <div className="flex justify-center">
+      <Image src={"/fn8wpnle.png"} alt={"logo"} width={100} height={100}/>
       </div>
 
       <div>
