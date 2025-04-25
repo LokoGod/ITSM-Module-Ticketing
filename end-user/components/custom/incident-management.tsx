@@ -8,8 +8,15 @@ export default function IncidentManagement() {
       <Tabs defaultValue="myTickets" className="mt-10">
         <div className="flex justify-center">
           <TabsList className="w-[400px]">
-            <TabsTrigger value="myTickets">My Tickets</TabsTrigger>
-            <TabsTrigger value="reportIncident">Report Incident</TabsTrigger>
+            <TabsTrigger value="myTickets" className="hover: cursor-pointer">
+              My Tickets
+            </TabsTrigger>
+            <TabsTrigger
+              value="reportIncident"
+              className="hover: cursor-pointer"
+            >
+              Report Incident
+            </TabsTrigger>
           </TabsList>
         </div>
 
