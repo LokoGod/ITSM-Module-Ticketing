@@ -30,7 +30,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
             <DynamicBreadcrumb />
           </div>
         </header>
-        <main className="flex flex-1 flex-col p-4">
+        <main className="flex flex-1 flex-col px-4">
           {children}
         </main>
       </SidebarInset>

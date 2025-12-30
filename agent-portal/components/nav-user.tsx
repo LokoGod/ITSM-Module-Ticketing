@@ -29,6 +29,8 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+import { ThemeToggle } from "./theme-toggle"
+import { useTheme } from "next-themes"
 
 export function NavUser({
   user,
@@ -40,6 +42,8 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
+
+  const { setTheme } = useTheme()
 
   return (
     <SidebarMenu>
@@ -81,6 +85,15 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
+              <DropdownMenuItem onClick={() => setTheme("light")}>
+          Light
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          Dark
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("system")}>
+          System
+        </DropdownMenuItem>
               <DropdownMenuItem>
                 <Sparkles />
                 Upgrade to Pro

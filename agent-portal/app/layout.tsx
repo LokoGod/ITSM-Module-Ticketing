@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const outfit = Outfit({ variable: '--font-sans' });
 
@@ -19,7 +20,15 @@ export default function RootLayout({
     <html lang="en" className={outfit.variable}>
       <body>
         <Sidebar>
-          {children}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange >
+
+            {children}
+
+          </ThemeProvider>
         </Sidebar>
       </body>
     </html>
