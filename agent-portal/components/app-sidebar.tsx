@@ -35,45 +35,41 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Pearlwave Labs",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
     {
-      name: "Acme Corp.",
+      name: "Jagro",
       logo: AudioWaveform,
       plan: "Startup",
     },
     {
-      name: "Evil Corp.",
+      name: "EFL",
       logo: Command,
       plan: "Free",
     },
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
+      title: "Dashboard",
+      url: "/dashboard",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Personal",
+          url: "/dashboard",
         },
         {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
+          title: "Team",
+          url: "/dashboard/team",
         },
       ],
     },
     {
-      title: "Models",
-      url: "#",
+      title: "Table View",
+      url: "/tableview",
       icon: Bot,
       items: [
         {
