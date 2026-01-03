@@ -12,7 +12,7 @@ export default function Page() {
             <DashPersonalloadWidgets />
             </div>
             <div>
-                <DashTotalIncidentChart />
+            <DashTotalIncidentChart />
             </div>
         </div>
     );
