@@ -12,6 +12,8 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
+  Table,
+  Ticket,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -68,21 +70,17 @@ const data = {
       ],
     },
     {
-      title: "Table View",
-      url: "/tableview",
-      icon: Bot,
+      title: "Tickets",
+      url: "/tickets",
+      icon: Ticket,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "All Tickets",
+          url: "/tickets",
         },
         {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
+          title: "My Tickets",
+          url: "/tickets/myTickets",
         },
       ],
     },
